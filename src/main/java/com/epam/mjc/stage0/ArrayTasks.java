@@ -6,12 +6,6 @@ package com.epam.mjc.stage0;
  * The usage of any additional packages (such as java.util.*) is forbidden.
  */
 public class ArrayTasks {
-    public static void main(String[] args) {
-
-        int [][] arr = new int[][] {{3, 1, 2,}, {3,2}};
-        sortRaggedArray(arr);
-    }
-
     /**
      * Return a String[] array that will list all the seasons of the year, starting with winter.
      */
@@ -131,10 +125,9 @@ public class ArrayTasks {
      * arr = [[3, 1, 2,], [3,2]] -> [[2, 3], [1, 2, 3]]
      * arr = [[5, 4], [7]]       -> [[7], [4, 5]]
      */
-    public static int[][] sortRaggedArray(int[][] arr) {
+    public int[][] sortRaggedArray(int[][] arr) {
         for (int [] n : arr){
             ArrayTasks.sort(n);
-            int i = 0;
         }
         arrLengthSort(arr);
         return arr;
